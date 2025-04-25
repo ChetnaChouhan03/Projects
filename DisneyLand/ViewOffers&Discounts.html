@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disneyland</title>
+  <link rel="stylesheet" href="styleindex.css" />
+  <link rel="icon" type="image/png" href="iconf.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #c0f8ff;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .navdiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #e99cdc;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #c0e8ff;
+      min-width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 8px 10px;
+    }
+
+    .dropdown-menu li a {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .dropdown-menu li a:hover {
+      color: #4019ce;
+    }
+
+    .magic-key-menu {
+      min-width: 300px;
+    }
+
+    .magic-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .magic-item:last-child {
+      border-bottom: none;
+    }
+
+    .magic-item strong {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .magic-item p {
+      font-size: 13px;
+      color: #555;
+      margin: 5px 0 0;
+    }
+
+    .box {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 2px solid #000;
+      background-color: rgb(239, 251, 255);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .sort-section {
+      margin: 20px 0;
+    }
+
+    .offer-card {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      gap: 20px;
+    }
+
+    .offer-card img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .offer-card h2 a {
+      font-size: 20px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .offer-card h2 a:hover {
+      text-decoration: underline;
+      color: #005fa3;
+    }
+
+    .offer-card p {
+      font-size: 16px;
+      color: #333;
+      margin: 4px 0;
+    }
+
+    footer {
+      background-color: #eaeaea;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .footer-links a:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navdiv">
+      <div class="logo">
+        <a href="index.html">
+          <img src="disneyLogo1.png" height="100" alt="Disney Logo">
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Tickets & Parks</a>
+              <ul class="dropdown-menu">
+                <li><a href="BuyThemedParkTickets.html">Buy Theme Park Tickets</a></li>
+                <li><a href="ViewOffers&Discounts.html">View Offers & Discounts</a></li>
+                <li><a href="BuySpecialEventsTickets.html"> Buy Special Events Tickets</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Places to Stay</a>
+              <ul class="dropdown-menu">
+                <li><a href="Resorts.html">All Resorts</a></li>
+                <li><a href="DHtels.html">Disneyland Hotel</a></li>
+              </ul>
+            </li>
+           
+              
+            <li class="dropdown">
+              <a href="https://www.disneystore.com/home/">Disney Store</a>
+              
+            </li>
+            <li class="dropdown">
+              <a href="album.html">Album</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">Register</a>
+              <ul class="dropdown-menu">
+                <li><a href="Registration.html">Register</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+      
+      
+      </div>
+    </div>
+  </header>
+
+
+
+  <main>
+    <div class="box">
+      <p>You are currently able to view products and prices for Magic Key holders and Disney Plus. 
+        <a href="#">Sign in or update your profile</a> to check for additional offers.</p>
+
+      <div class="sort-section">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option>Disney Picks</option>
+          <option>Offer Name</option>
+          <option>Ending Soon</option>
+        </select>
+      </div>
+
+      <div class="offer-card">
+        <img src="tktOffer.jpg" alt="Ticket Offer">
+        <div class="offer-card-content">
+          <h2><a href="#">Disneyland Anniversary Ticket Offer – Visit for as Low as $100 Per Day!</a></h2>
+          <p><strong>Validity:</strong> May 16 – August 14, 2025</p>
+          <p><strong>Offer Price:</strong> $400 for 4 Days</p>
+          <p><strong>Offer Type:</strong> Ticket</p>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="hotel.jpg" alt="Hotel Offer">
+        <div class="offer-card-content">
+          <h2><a href="#">Save up to 20% on select rooms at Disneyland Resort Hotels (Sun-Thu)</a></h2>
+          <p><strong>Validity:</strong> March 23 – May 15, 2025</p>
+          <p><strong>Offer Type:</strong> Room</p>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="ani.jpg" alt="Anniversary Offer">
+        <div class="offer-card-content">
+          <h2><a href="#">Book Early and Save Up to 30% for Disneyland 70th Anniversary!</a></h2>
+          <p><strong>Validity:</strong> May 16 – August 14, 2025</p>
+          <p><strong>Offer Type:</strong> Room</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Disneyland Resort. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy & Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disneyland</title>
+  <link rel="icon" type="image/png" href="iconf.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #c0f8ff;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .navdiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #e99cdc;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #c0e8ff;
+      min-width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 8px 10px;
+    }
+
+    .dropdown-menu li a {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .dropdown-menu li a:hover {
+      color: #4019ce;
+    }
+
+    .main-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .center-text {
+      font-size: 70px;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 20px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .txt {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .ticket-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .box {
+      width: 300px;
+      height: 220px;
+      background-color: rgb(239, 251, 255);
+      padding: 20px;
+      border: 2px solid rgb(0, 0, 0);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .box h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .box a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .box a:hover {
+      text-decoration: underline;
+    }
+
+    footer.footer {
+      background-color: #c0f8ff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      word-spacing: 20px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      color: #4019ce;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navdiv">
+      <div class="logo">
+        <a href="index.html">
+          <img src="disneyLogo1.png" height="100" alt="Disney Logo">
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Tickets & Parks</a>
+              <ul class="dropdown-menu">
+                <li><a href="BuyThemedParkTickets.html">Buy Theme Park Tickets</a></li>
+                <li><a href="ViewOffers&Discounts.html">View Offers & Discounts</a></li>
+                <li><a href="BuySpecialEventsTickets.html"> Buy Special Events Tickets</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Places to Stay</a>
+              <ul class="dropdown-menu">
+                <li><a href="Resorts.html">All Resorts</a></li>
+                <li><a href="DHtels.html">Disneyland Hotel</a></li>
+              </ul>
+            </li>
+           
+
+              
+            <li class="dropdown">
+              <a href="https://www.disneystore.com/home/">Disney Store</a>
+              
+            </li>
+            <li class="dropdown">
+              <a href="album.html">Album</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">Login / Register</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Login</a></li>
+                <li><a href="Registration.html">Register</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+      
+      
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Banner -->
+  <div class="main-banner">
+    <img src="tkt.jpg" alt="Disneyland Banner">
+
+
+  <!-- Page Title and Intro -->
+  <h1 class="center-text">Disneyland Theme Park Tickets</h1>
+  <p class="text">Discover the excitement of Disneyland Resort in Anaheim, California, featuring 2 amazing theme parks—Disneyland Park and Disney California Adventure Park. Make the most of your visit with a multi-day ticket and see what both parks have to offer.</p>
+  <hr>
+  <h3 class="txt">Select Your Ticket</h3>
+
+  <!-- Ticket Options -->
+  <div class="ticket-container">
+    <div class="box">
+      <h2>Standard Theme Ticket</h2>
+      <p>1 to 5 day ticket. Thrills and enchantment await with a theme park ticket!</p>
+      <a href="#">Read More</a><br><br>
+      <strong>Starting At:</strong><br>
+      $103 - $206/day
+    </div>
+
+    <div class="box">
+      <h2>Disneyland Anniversary Ticket Offer</h2>
+      <p>Enjoy a specially priced 3 or 4 day ticket with admission to 1 park per day.</p>
+      <a href="#">Read More</a><br><br>
+      <strong>Starting At:</strong><br>
+      $100 - $120/day
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Disneyland Resort. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy & Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

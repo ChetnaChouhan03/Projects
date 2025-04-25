@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disneyland</title>
+  <link rel="stylesheet" href="styleindex.css" />
+  <link rel="icon" type="image/png" href="iconf.png" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #c0f8ff;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navdiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #e99cdc;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #c0e8ff;
+      min-width: 200px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 10px;
+    }
+
+    .dropdown-menu li a {
+      color: black;
+      font-size: 0.95rem;
+      display: block;
+    }
+
+    .dropdown-menu li a:hover {
+      color: #4019ce;
+    }
+
+    .main-banner img {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .footer-links a:hover {
+      color: #0077cc;
+    }
+
+    .ticket-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.ticket-card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.ticket-details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ticket-details h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+.ticket-details small {
+  display: block;
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.ticket-details p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ticket-price {
+  min-width: 200px;
+  text-align: center;
+}
+
+.ticket-price p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.ticket-price strong {
+  font-size: 22px;
+  color: #0077cc;
+}
+
+.ticket-price button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ticket-price button:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="navdiv">
+      <div class="logo">
+        <a href="index.html">
+          <img src="disneyLogo1.png" alt="Disney Logo">
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Tickets & Parks</a>
+              <ul class="dropdown-menu">
+                <li><a href="BuyThemedParkTickets.html">Buy Theme Park Tickets</a></li>
+                <li><a href="ViewOffers&Discounts.html">View Offers & Discounts</a></li>
+                <li><a href="BuySpecialEventsTickets.html">Buy Special Events Tickets</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a>Places to Stay</a>
+              <ul class="dropdown-menu">
+                <li><a href="Resorts.html">All Resorts</a></li>
+              </ul>
+            </li>
+            
+            </li>
+            <li><a href="https://www.disneystore.com/home/">Disney Store</a></li>
+            <li class="dropdown">
+              <a href="#">Album</a>
+              
+            </li>
+            <li class="dropdown">
+              <a >Register</a>
+              <ul class="dropdown-menu">
+                <li><a href="Registration.html">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- MAIN BANNER -->
+  <div class="main-banner">
+    <img src="tik.jpg" alt="Banner Image" />
+  </div>
+
+  <h2>Special Event Tickets</h2>
+  <div class="ticket-card">
+    <img src="https://i.pinimg.com/736x/a5/25/89/a525895a8be4dde385cd39fbbc54be9a.jpg" alt="Mickey and Minnie Event">
+    <div class="ticket-details">
+      <h2>Disneyland After Dark: Star Wars Nite</h2>
+      <p>
+        Join us for the ultimate <em>Star Wars</em> extravaganza at an after-hours party packed with galactic fun. Enjoy character sightings, themed menu selections, and exciting entertainment—including lightsaber instructionals and the Star Wars costume cavalcade.
+      </p>
+      <div class="ticket-price">
+        <p>Prices from:</p>
+        <strong>Ages 3+ $169.00</strong>
+        <br>
+        <button>Select Tickets</button>
+      </div>
+        </div>
+
+    
+  <div class="ticket-card">
+    <img src="data:image/jpeg;base64,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" alt="Mickey and Minnie Event">
+    <div class="ticket-details">
+      <h2>Disneyland After Dark: Pride Nite
+      </h2>
+      <p>
+        Save the date! Celebrate Pride at a joyous after-hours event filled with excitement. Enjoy fun photo ops, Character experiences, epic dance parties and access to shorter attraction wait times. This event takes place on 2 separate nights at Disneyland Park, June 16 and 18, 2025. Purchase of a separate event admission ticket is required to attend.The sale of a select amount of pre-sale tickets for all Magic Key holders—including Inspire, Believe, Enchant and Imagine Key holders—has ended. General admission tickets go on sale April 17, 2025 (no earlier than 9:00 AM Pacific Time).
+      </p>
+      <div class="ticket-price">
+        <p>Prices from:</p>
+        <strong>Ages 3+ $200.00</strong>
+        <br>
+        <button>Select Tickets</button>
+      </div>
+    </div>
+    <div class="ticket-card last-card">
+      <img src="11.jpg" alt="Mickey and Minnie Event">
+      <div class="ticket-details">
+        <h2>Disneyland After Dark: 90s Nite</h2>
+        <p>Save the date! Celebrate Pride at a joyous after-hours event filled with excitement. Enjoy fun photo ops, Character experiences, epic dance p...</p>
+        <div class="ticket-price">
+          <p>Prices from:</p>
+          <strong>Ages 3+ $169.00</strong>
+          <br>
+          <button>Select Tickets</button>
+        </div>
+      </div>
+    </div>
+    <div class="ticket-card last-card">
+      <img src="oggi.png" alt="Mickey and Minnie Event">
+      <div class="ticket-details">
+        <h2>Oogie Boogie Bash – A Disney Halloween Party</h2>
+        <p>he frightful fun has come to an end, but you can look forward to a ghoulish good time next year.  Check back later for more information.</p>
+        <div class="ticket-price">
+          <p>Prices from:</p>
+          <strong>Ages 3+ $469.00</strong>
+          <br>
+          <button>Select Tickets</button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+<hr>
+<small> Prices are displayed in US Dollars (USD). Total calculated at checkout.</small>
+</div>
+</body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Disneyland Resort. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy & Policy</a>
+    </div>
+  </footer>
+
+</html>
